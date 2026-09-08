@@ -19,35 +19,36 @@ Jumper Wires
 
 
 # Procedure
-Step 1: Assemble the Circuit
+# Step 1: Assemble the Circuit
 Place the Arduino UNO, breadboard, push button, LED, and resistor on the workbench.
 Connect the Arduino UNO to the computer using a USB cable.
-Step 2: Connect the External Interrupt Circuit
+# Step 2: Connect the External Interrupt Circuit
 Connect the LED anode to Digital Pin 13 through a 220 Ω resistor.
 Connect the LED cathode to GND.
 Connect one terminal of the push button to Digital Pin 2 (INT0).
 Connect the other terminal of the push button to GND.
 Configure Pin 2 as INPUT_PULLUP in the program.
-Step 3: Configure the Timer Interrupt
+# Step 3: Configure the Timer Interrupt
 Use Timer1 to generate a periodic interrupt.
 Configure the timer in the Arduino program.
 Define an Interrupt Service Routine (ISR) for Timer1.
-Step 4: Open the Arduino IDE
+# Step 4: Open the Arduino IDE
 Open Arduino IDE.
 Select Tools → Board → Arduino UNO.
 Select the correct COM Port.
-Step 5: Write and Upload the Program
+# Step 5: Write and Upload the Program
 Write the program for external and timer interrupts.
 Verify the program.
 Upload it to the Arduino UNO.
-Step 6: Execute the Program
+# Step 6: Execute the Program
 Press the push button and observe the external interrupt response.
 Observe the LED blinking periodically due to the timer interrupt.
 Open the Serial Monitor to observe interrupt messages (if included).
-Step 7: Verify the Output
+# Step 7: Verify the Output
 Confirm that pressing the push button immediately triggers the external interrupt.
 Confirm that the timer interrupt executes periodically without polling.
 Record the observations.
+
 # Program
 ```
 #include <FspTimer.h>
