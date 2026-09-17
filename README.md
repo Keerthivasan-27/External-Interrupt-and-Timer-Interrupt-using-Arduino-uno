@@ -151,7 +151,7 @@ void loop() {
   }
 }
 ```
-<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/8ffe9015-dd9a-430d-ab15-dc5d874135fb" />
+
 
 
 # Observation
@@ -162,4 +162,5 @@ Timer Running	Timer ISR executes periodically
 LED	Toggles/blinks according to ISR
 # Result
 The External Interrupt and Timer Interrupt were successfully implemented using the Arduino UNO. The external interrupt responded immediately to the push button event, while the timer interrupt executed periodically, demonstrating efficient interrupt-driven programming without continuous polling.
+<img width="706" height="998" alt="image" src="https://github.com/user-attachments/assets/a2a9a2a2-fe90-4566-870c-ad8a51e81f98" />
 
